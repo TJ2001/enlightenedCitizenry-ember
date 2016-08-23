@@ -1,0 +1,10 @@
+<ul>
+  {{#each model as |committee|}}
+    {{#if committee.subcommittee}}
+    {{else}}
+      <li> Chamber: {{committee.chamber}}
+      <br>
+      {{#link-to "subcommittees" committee.committee_id}}Committee:  {{committee.name}}{{/link-to}}</li>
+    {{/if}}
+  {{/each}}
+</ul>

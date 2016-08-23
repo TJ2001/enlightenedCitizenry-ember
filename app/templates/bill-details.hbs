@@ -1,0 +1,6 @@
+<h2>Bill Title: {{model.official_title}}</h2>
+<h2>Bill Number: {{model.number}}</h2>
+<h3>Date Introduced: {{model.introduced_on}}</h3>
+<h3>Sponsored by: {{#link-to 'legislator' model.sponsor_id}}{{model.sponsor.first_name}} {{model.sponsor.last_name}}{{/link-to}}</h3>
+<h3>Link: <a href="{{model.last_version.urls.html}}">{{model.last_version.urls.html}}</a></h3>
+<h3>Committees: {{model.committee_ids}}</h3>

@@ -1,0 +1,5 @@
+<ul>
+  {{#each model as |bill|}}
+      <li> Title: {{#link-to "bill-details" bill.bill_id}}{{bill.official_title}}{{/link-to}}<br>Bill ID: {{bill.bill_id}}</li>
+  {{/each}}
+</ul>

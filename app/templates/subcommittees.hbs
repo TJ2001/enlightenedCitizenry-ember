@@ -1,0 +1,9 @@
+<ul>
+  {{#each model.subcommittees as |committee|}}
+    {{#if committee.subcommittee}}
+      {{#if (eq model.parent_id committee.parent_committee_id)}}
+        <li> Chamber: {{committee.chamber}}<br>Subcommittee: {{committee.name}}</li>
+      {{/if}}
+    {{/if}}
+  {{/each}}
+</ul>
